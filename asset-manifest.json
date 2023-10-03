@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/themoviejunkie/static/css/main.e5cd7493.css",
+    "main.js": "/themoviejunkie/static/js/main.5434844e.js",
+    "static/js/787.7c42db31.chunk.js": "/themoviejunkie/static/js/787.7c42db31.chunk.js",
+    "index.html": "/themoviejunkie/index.html",
+    "static/media/search.svg": "/themoviejunkie/static/media/search.b416605642fcb3f2447edc96c1a80e05.svg",
+    "main.e5cd7493.css.map": "/themoviejunkie/static/css/main.e5cd7493.css.map",
+    "main.5434844e.js.map": "/themoviejunkie/static/js/main.5434844e.js.map",
+    "787.7c42db31.chunk.js.map": "/themoviejunkie/static/js/787.7c42db31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5cd7493.css",
+    "static/js/main.5434844e.js"
+  ]
+}

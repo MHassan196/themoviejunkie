@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+.app{
+    max-width: 90%; 
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+    text-align: center;
+    color: rgb(220, 221, 221);
+    font-size: 3rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #474747;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1.2rem 1.75rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-input{
+    width: 100%;
+    background-color: #474747;
+    border: none;
+    color: rgb(220, 221, 221);
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+.search-input::placeholder{
+    color: rgb(220, 221, 221);
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+}
+.search-input:focus{
+    outline: none;
+}
+.search-icon{
+    cursor: pointer;
+}
+.empty{
+    width: 100%;
+  margin-top: 3rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+    
+}
+.empty h2{
+    color: rgb(220, 221, 221);
+    font-size: 1.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 310px;
+    height: 460px;
+    margin: 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie div:nth-of-type(1){
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    color: #f9d3b4;
 }
+.movie:hover{
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+}
+.movie div:nth-of-type(2){
+    width: 100%;
+    height: 100%;
+}
+
+.movie div:nth-of-type(2) img{
+    height: 100%;
+    width: 100%;
+}
+.movie div:nth-of-type(3){
+    z-index: 2;
+    background-color: #343739;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.movie div:nth-of-type(3) span{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(220, 221, 221);
+}
+.movie div:nth-of-type(3) h3{
+    margin-top: 5px;
+    color: rgb(220, 221, 221);
+}
+.movie:hover div:nth-of-type(2){
+    height: 100%;
+    opacity: 0.3;
+}
+.movie:hover div:nth-of-type(3){
+    background-color: transparent;
+}
+.movie:hover div:nth-of-type(1){
+    opacity: 1;
+}
+@media screen and (max-width: 600px) {
+    .app {
+      padding: 4rem 2rem;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+  
+    .search {
+      padding: 1rem 1.75rem;
+      width: 80%;
+    }
+  
+    .search-input {
+      font-size: 1rem;
+    }
+  
+    .search-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .search-input::placeholder{
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .app {
+      padding: 4rem 1rem;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .container {
+      margin-top: 2rem;
+    }
+  
+    .movie {
+      width: "100%";
+      margin: 1rem;
+    }
+    .search-input::placeholder{
+        font-size: 13px;
+    }
+    .movie div:nth-of-type(3){  
+        padding: 13px 24px 13px 24px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .app {
+      padding: 3rem 0.7rem;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      margin-top: 2rem;
+    }
+  
+    .movie {
+      width: 230px;
+      height: 360px;
+      margin: 1rem;
+    }
+    .search-input::placeholder{
+        font-size: 12px;
+    }
+    .movie div:nth-of-type(3){  
+        padding: 11px 24px 11px 24px;
+    }
+  }

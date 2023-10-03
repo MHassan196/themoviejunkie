@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/themoviejunkie/static/css/main.e5cd7493.css",
-    "main.js": "/themoviejunkie/static/js/main.5434844e.js",
+    "main.css": "/themoviejunkie/static/css/main.42a9d3f1.css",
+    "main.js": "/themoviejunkie/static/js/main.de5754b2.js",
     "static/js/787.7c42db31.chunk.js": "/themoviejunkie/static/js/787.7c42db31.chunk.js",
+    "static/media/spinner.svg": "/themoviejunkie/static/media/spinner.263d85fb73e03ad951d201bdc2ed86c5.svg",
     "index.html": "/themoviejunkie/index.html",
     "static/media/search.svg": "/themoviejunkie/static/media/search.b416605642fcb3f2447edc96c1a80e05.svg",
-    "main.e5cd7493.css.map": "/themoviejunkie/static/css/main.e5cd7493.css.map",
-    "main.5434844e.js.map": "/themoviejunkie/static/js/main.5434844e.js.map",
+    "main.42a9d3f1.css.map": "/themoviejunkie/static/css/main.42a9d3f1.css.map",
+    "main.de5754b2.js.map": "/themoviejunkie/static/js/main.de5754b2.js.map",
     "787.7c42db31.chunk.js.map": "/themoviejunkie/static/js/787.7c42db31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5cd7493.css",
-    "static/js/main.5434844e.js"
+    "static/css/main.42a9d3f1.css",
+    "static/js/main.de5754b2.js"
   ]
 }
